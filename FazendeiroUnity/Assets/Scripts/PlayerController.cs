@@ -14,9 +14,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // movimenta o player para esquerda e direita a partir da entrada do usuário
+        // movimenta o player para esquerda e direita a partir da entrada do usu�rio
         transform.Translate(Vector3.right * speed * Time.deltaTime * horizontalInput);
-        // mantém o player dentro dos limites do jogo (eixo x)
+        // mant�m o player dentro dos limites do jogo (eixo x)
         if (transform.position.x < -xRange)
         {
             transform.position = new Vector3(-xRange, transform.position.y, transform.position.y);
